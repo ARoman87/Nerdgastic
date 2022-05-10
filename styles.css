@@ -1,0 +1,270 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #272b2e;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+.navbar h1 {
+    font-family: 'Goldman', cursive;
+    margin-left: 20px; 
+    color: white;
+    letter-spacing: 3px;
+}
+
+.navbar a {
+    text-decoration: none;
+}
+
+.navlinks ul li{
+    display: inline-flex;
+    justify-content: space-around;  
+    margin: 12px 20px;
+}
+
+.navlinks ul {
+    margin-right: 20px;
+    font-family: 'Goldman', cursive;
+}
+
+.navlinks a {
+    color: white;
+    font-size: 20px;
+}
+
+.navlinks a:hover {
+    color: white;
+    text-shadow: 0 0 10px #fff,
+                 0 0 20px #fff,
+                 0 0 40px #fff;
+    transition: 0.5s;
+}
+
+
+
+.checkButton {
+    font-size: 28px;
+    cursor: pointer;
+    float: right;
+    margin-top: 15px;
+    margin-right: 20px;
+    display: none;
+}
+
+.burgerMenu {
+    display: none;
+}
+
+.burgerLinks {
+    display: none;
+    font-family: 'Goldman', cursive;
+}
+
+#check {
+    display: none;
+}
+
+@media only screen and (max-width: 950px) {
+    .navlinks ul {
+        display: none;
+    }
+
+    .checkButton {
+        display: initial;
+        color: white
+    }
+
+    .burgerMenu {
+        display: initial;
+    }
+
+    .navbar h1 {
+        font-size: 28px;
+    }
+
+    .burgerLinks {
+        display: none;
+        width: 100%;
+        background-color: #272b2e;
+        justify-content: center;
+        padding-top: 55px;
+        position: fixed;
+        
+    }
+
+    .burgerLinks ul li:hover {
+        background-color: #3d4447;
+        transition: .7s;
+    }
+
+    .burgerLinks li {
+        list-style: none;
+        padding: 20px;
+
+    }
+
+    .burgerLinks ul li{
+        width: 100vw;
+        text-align: center;
+    }
+
+    .burgerLinks a {
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        margin-right: 35px;
+
+    }
+
+    .burgerLinks.active {
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar h1 {
+        font-size: 16px;
+    }
+
+    .checkButton {
+        margin-top: 2px;
+    }
+
+    .burgerLinks {
+        padding-top: 25px;
+    }
+
+    
+}
+
+.main {
+    display: flex;
+    width: 75%;
+    margin: 0 auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 75px;
+}
+
+.productContainer {
+    max-width: 400px;
+    height: 550px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    box-shadow: 0 3px 20px lightgray;
+    border-radius: 5px;
+    overflow: hidden;
+    
+}
+
+.imageContainer {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+.priceAndLink {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+
+
+
+/* ------- Product Button --------   */
+
+.priceAndLink button {
+    background: #3d4447;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border-radius: 10px;
+    width: 120px;
+    height: 40px;
+    margin-top: 10px;
+    font-size: 16px;
+    transition: .5s;
+    box-shadow: 0 0 0 1px #353535;
+    font-family: "Goldman";
+    
+}
+
+.priceAndLink button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgb(93, 93, 93);
+    
+}
+
+
+
+
+/* ------- Product Description ------- */
+
+
+.descriptionContainer {
+    height: 150px;
+    overflow: contain;
+
+}
+
+.descriptionContainer p {
+    margin: 20px;
+    overflow: contain;
+    
+}
+
+.descriptionContainer h3 {
+    padding-left: 20px;
+    border-bottom: solid 1px;
+    width: 75%;
+    
+}
+
+@media only screen and (max-width: 821px) {
+    .main {
+        width: 100%;
+    } 
+}
+
+.pages {
+    display: flex;
+    justify-content: center;
+}
+
+.pages ul{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.pages li {
+    list-style: none;
+    margin: 10px;
+    
+}
+
+.pages a {
+    color: black;
+}
+
+.comingSoon {
+    margin-top: 20%;
+}
+
+.comingSoon h1 {
+    font-size: 48px;
+    font-family: "Goldman";
+}
