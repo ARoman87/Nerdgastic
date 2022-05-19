@@ -141,6 +141,15 @@ body {
         padding-top: 25px;
     }
 
+    .productContainer .priceAndLink button {
+        font-size: 14px;
+    }
+
+    .productContainer .descriptionContainer p {
+        font-size: 14px;
+    }
+
+
     
 }
 
